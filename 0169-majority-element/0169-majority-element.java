@@ -9,13 +9,12 @@ class Solution {
             // }
 
              map.put(nums[i],map.getOrDefault(nums[i], 0)+1 );
-
+        }
             // Set<Integer>getKey= map.keySet();
             for (int keySet : map.keySet()) {
                 if (map.get(keySet) > nums.length / 2) {
                           return keySet;
                 }
-            }
-        } return -1;
+            } return -1;
     }
     }
