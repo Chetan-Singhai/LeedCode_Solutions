@@ -1,6 +1,5 @@
 class Solution {
     public int maximumCount(int[] nums) {
-        int max = Integer.MIN_VALUE;
         int pc = 0;
         int nc = 0;
         for( int i=0; i<nums.length; i++){
@@ -9,9 +8,8 @@ class Solution {
             }else if(nums[i] > 0){
                 pc++;
             }
-            max = Math.max(pc,nc);
-            
         }
+         int max = Math.max(pc,nc);
         return max;
         
     }
